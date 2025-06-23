@@ -9,7 +9,10 @@ spec:
   sources:
     - repoURL: https://github.com/joseluiscodesk8/gitops
       targetRevision: main
-      path: "environments/minikube/argocd-apps/"
+      path: "environments/hetzner/argocd/apps/"
+    - repoURL: https://github.com/joseluiscodesk8/gitops
+      targetRevision: main
+      path: "environments/scaleway/argocd/apps/"
   destination:
    server: https://kubernetes.default.svc
    namespace: argocd

@@ -12,8 +12,8 @@ configs:
           id: github
           name: GitHub
           config:
-            clientID: Ov23li7L6oRuONdBgiR1
-            clientSecret: 1d24290df1f11b29f910bb692344cdea6dad2628
+            clientID: ${github_client_id}
+            clientSecret: ${github_client_secret}
             redirectURI: http://localhost:8080/api/dex/callback
   
   rbac:
