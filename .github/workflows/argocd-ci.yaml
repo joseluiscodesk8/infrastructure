@@ -24,3 +24,4 @@ jobs:
         terraform apply -auto-approve \
           -var="argocd_github_client_id=$ARGOCD_GITHUB_CLIENT_ID" \
           -var="argocd_github_client_secret=$ARGOCD_GITHUB_CLIENT_SECRET"
+      working-directory: infrastructure/modules/kubernetes-components
